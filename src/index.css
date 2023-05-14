@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+
+.header-container{
+    background-color: #c5c5c5;
+    height: 100px;
+}
+
+.heading{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+}
+
+.lists{
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(252, 255, 104);
+    margin-left: 3px;
+}
+
+.checked{
+    text-decoration: line-through
+}
+
+.list-container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: baseline;
+    gap: 30px;
+}
+
+.list{
+    font-family: 'Montserrat';
+    color: rgb(60, 60, 60);
+    min-width: 350px;
+    min-height: 175px;
+    border-radius: 10px;
+    background-color: rgb(204, 204, 204);
+}
+
+ul {
+    list-style-type: none;
+  }
+
+li{
+    line-height: 1.5;
+}
+
+
+.list h1{
+    padding-left: 40px;
+    font-weight: 400;
+}
+
+.inputNewList{
+    font-family: 'Montserrat';
+    width: 260px;
+    margin: 21.440px 40px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.inputNewItem{
+    font-family: 'Montserrat';
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.newListSubmitButton{
+    margin: auto;
+    display: block;
+    font-family: 'Montserrat';
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.text-button{
+    font-family: 'Montserrat';
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.delete-button{
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 0.75rem;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.color-picker{
+    margin: auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.plus-button{
+    border-radius: 16px;
+    border-width: thin;
+    height: 30px;
+    width: 30px;
+    font-size: 1.2rem;
+}
+
+.item-name{
+    margin-left: 5px;
+}
+
