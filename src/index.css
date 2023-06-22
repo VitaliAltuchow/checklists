@@ -1,30 +1,45 @@
-body{
+:root {
+    --yellow: rgb(252, 255, 104);
+    /* title in header */
+
+    --bright-grey: rgb(204, 204, 204);
+    /* background header und standart background list */
+
+    --dark-grey: rgb(60, 60, 60);
+    /* text in list */
+}
+
+body {
     margin: 0;
 }
 
-.header-container{
-    background-color: #c5c5c5;
+/* Header */
+
+.header-container {
+    margin: 0;
     height: 100px;
+    background-color: #c5c5c5;
 }
 
-.heading{
-    font-size: 4rem;
-    font-weight: bold;
+.header {
     margin: 0;
     padding: 10px 0px 10px 10px;
 }
 
-.lists{
+.check {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.lists {
+    margin-left: 3px;
     font-size: 2rem;
     font-weight: normal;
     font-style: italic;
-    color: rgb(252, 255, 104);
-    margin-left: 3px;
+    color: var(--yellow);
 }
 
-.checked{
-    text-decoration: line-through
-}
+/* Workspace */
 
 .list-container {
     margin: 30px;
@@ -35,88 +50,89 @@ body{
     gap: 30px;
 }
 
-.list{
-    font-family: 'Montserrat';
-    color: rgb(60, 60, 60);
+.list {
     min-width: 350px;
     min-height: 175px;
+    font-family: 'Montserrat';
     border-radius: 10px;
-    background-color: rgb(204, 204, 204);
+    color: var(--dark-grey);
+    background-color: var(--bright-grey);
 }
 
 ul {
     list-style-type: none;
-  }
+}
 
-li{
+li {
     line-height: 1.5;
 }
 
-
-.list h1{
+.list h1 {
     padding-left: 40px;
     font-weight: 400;
 }
 
-.inputNewList{
-    font-family: 'Montserrat';
-    width: 260px;
+.checked {
+    text-decoration: line-through
+}
+
+.item-name {
+    margin-left: 5px;
+}
+
+
+/* Text Input */
+
+.inputNewList {
     margin: 21.440px 40px;
+    width: 260px;
     font-weight: 400;
     font-size: 2rem;
 }
 
-.inputNewItem{
-    font-family: 'Montserrat';
+.inputNewItem {
     margin-right: 10px;
     font-weight: 400;
     font-size: 1rem;
 }
 
-.newListSubmitButton{
-    margin: auto;
-    display: block;
-    font-family: 'Montserrat';
-    width: 100px;
+
+/* Buttons */
+
+.plus-button {
     height: 30px;
-    border-radius: 3px;
-    border-width: 1px;
+    width: 30px;
+    border-radius: 16px;
+    border-width: thin;
+    font-size: 1.2rem;
 }
 
-.text-button{
-    font-family: 'Montserrat';
+.newListSubmitButton {
+    display: block;
+    margin: auto;
     width: 100px;
     height: 30px;
     border-radius: 7px;
     border-width: 1px;
 }
 
-.delete-button{
+.delete-button {
     display: block;
+    margin-left: 5px;
+    margin-bottom: 5px;
     width: auto;
     height: auto;
     font-size: 0.75rem;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    border-radius: 7px;
+    border-width: 1px;
 }
 
-.color-picker{
-    margin: auto;
+/* Color Picker */
+
+.color-picker {
     display: block;
-    width: 30px;
-    height: 30px;
+    margin: auto;
     margin-bottom: 20px;
-}
-
-.plus-button{
-    border-radius: 16px;
-    border-width: thin;
-    height: 30px;
     width: 30px;
-    font-size: 1.2rem;
+    height: 30px;
 }
-
-.item-name{
-    margin-left: 5px;
-}
-
