@@ -1,0 +1,59 @@
+.list {
+    min-width: 350px;
+    min-height: 175px;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    color: var(--dark-grey);
+    background-color: var(--bright-grey);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 1.5;
+}
+
+.list h1 {
+    padding-left: 40px;
+    font-weight: 400;
+}
+
+.checked {
+    text-decoration: line-through
+}
+
+.item-name {
+    margin-left: 5px;
+}
+
+/* Text Input */
+
+.input-new-item {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+/* Buttons */
+
+.plus-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 16px;
+    border-width: thin;
+    font-size: 1.2rem;
+}
+
+.delete-button {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    height: auto;
+    font-size: 0.75rem;
+    border-radius: 7px;
+    border-width: 1px;
+}

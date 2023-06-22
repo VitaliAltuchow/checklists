@@ -1,0 +1,36 @@
+:root {
+    --yellow: rgb(252, 255, 104);
+    /* title in header */
+
+    --bright-grey: rgb(204, 204, 204);
+    /* background header und standart background list */
+
+    --dark-grey: rgb(60, 60, 60);
+    /* text in list */
+}
+
+/* Header */
+
+.header-container {
+    margin: 0;
+    height: 100px;
+    background-color: #c5c5c5;
+}
+
+.header {
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+}
+
+.check {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.lists {
+    margin-left: 3px;
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--yellow);
+}

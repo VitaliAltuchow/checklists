@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./List.css";
 
 /**
  * A list whose name and color is passed by the parameters.
@@ -42,7 +43,7 @@ export default function List({ name, color }) {
         <li>
           <input
             type="text"
-            className="inputNewItem"
+            className="input-new-item"
             value={textInput}
             onKeyDown={(e) => {
               if (e.key === "Enter") {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Lists from "./components/Lists";
+import Lists from "./components/Lists/Lists";
 import "./App.css";
 
 function App() {

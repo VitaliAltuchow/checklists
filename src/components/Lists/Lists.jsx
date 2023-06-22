@@ -1,5 +1,6 @@
 import { useState } from "react";
-import List from "./List";
+import List from "../List/List";
+import "./Lists.css";
 
 /**
  * Container with the possibility to create as many lists (List Components) as you want.
@@ -27,10 +28,13 @@ export default function Lists() {
       )}
 
       {newListForm && (
-        <div className="list" style={{ backgroundColor: selectedColor }}>
+        <div
+          className="new-list-form"
+          style={{ backgroundColor: selectedColor }}
+        >
           <input
             placeholder="Title"
-            className="inputNewList"
+            className="input-new-list"
             type="text"
             onKeyDown={(e) => {
               if (e.key === "Enter" && formTextInput != "") {
@@ -55,7 +59,7 @@ export default function Lists() {
             onChange={(e) => setSelectedColor(e.target.value)}
           />
           <button
-            className="newListSubmitButton"
+            className="new-list-submit-button"
             onClick={(e) => {
               if (formTextInput != "") {
                 setLists([
