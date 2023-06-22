@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MyLists from "./components/MyLists";
+import Lists from "./components/Lists";
 import "./App.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <span className="lists">lists</span>
         </p>
       </div>
-      <MyLists />
+      <Lists />
     </>
   );
 }
